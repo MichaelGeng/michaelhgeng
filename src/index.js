@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
+import Typed from './components/Typed';
+import Bio from './components/Bio';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(<Typed />, document.getElementById('typed'));
+ReactDOM.render(<Bio />, document.getElementById('my_bio'));
