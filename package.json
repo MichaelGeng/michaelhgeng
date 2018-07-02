@@ -5,9 +5,13 @@
   "homepage": "https://MichaelGeng.github.io",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "ityped": "^1.0.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-typed": "^1.0.8",
+    "react-typist": "^2.0.4",
+    "typed.js": "^2.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
