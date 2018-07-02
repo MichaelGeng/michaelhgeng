@@ -12,7 +12,7 @@ class Typed extends Component {
         <span> I'm a rising Senior at the University of Michigan</span>
         <Typist.Backspace count={50} delay={200} />
         <span> I'm looking for positions in all areas of the stack in web development</span>
-        <Typist.Backspace count={50} delay={200} />
+        <Typist.Backspace count={70} delay={200} />
         <span> I hope you find something you like!</span>
       </Typist>
     );
