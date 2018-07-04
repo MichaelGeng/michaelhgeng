@@ -1,5 +1,5 @@
 1. Implement react-chartjs (https://github.com/reactjs/react-chartjs)
 2. Implement Social Media Buttons
-3. Add picture of myself
 4. Look into React-Bootstrap (https://reactstrap.github.io/)
 5. React Social Icons (https://www.npmjs.com/package/react-social-icons)
+6. Get old favicon from work laptop
