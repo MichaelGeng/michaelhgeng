@@ -12,6 +12,7 @@
     "react-chartjs": "^1.2.0",
     "react-chartjs-2": "^2.7.2",
     "react-dom": "^16.4.1",
+    "react-favicon": "0.0.14",
     "react-scripts": "1.1.4",
     "react-typed": "^1.0.8",
     "react-typist": "^2.0.4",
