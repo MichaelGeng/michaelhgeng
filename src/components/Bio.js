@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import './Bio.css'
 import Favicon from 'react-favicon';
 const photo = require('../images/hike_dogmt.jpg')
+const favicon = require('../images/MG.png')
 
 class Bio extends Component {
   render() {
     return (
       <div>
-          <Favicon url="https://drive.google.com/uc?export=download&id=1qaEX62a6gl4NKJj4jhYJE4CG1XUoI9MY" />
+          <Favicon url = {favicon} />
           <img src = {photo} id = "selfie" alt="me"/>
           <p class="about_para"> I'm a Junior in Computer Science and Entrepreneurship at the University of Michigan. Since my first programming course, I have developed and continue to improve my foundation in data structures and algorithms. My passion lies in Ofinding opportunities to apply skills I have learned to create, implement, and solve complex computer science problems businesses face today. After finding a solution, I shift my mindset towards optimizations. How can I make my current program faster, more elegant, and more readable? Making continuous upgrades and seeing the performance improvements is one of my favorite aspects of development.</p>
           
