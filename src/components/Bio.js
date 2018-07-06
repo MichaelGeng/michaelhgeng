@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './Bio.css'
+import Favicon from 'react-favicon';
 const photo = require('../images/hike_dogmt.jpg')
+const favicon = require('../images/MG.png')
 
 class Bio extends Component {
   render() {
     return (
       <div>
+          <Favicon url = {favicon} />
           <img src = {photo} id = "selfie" alt="me"/>
           <p class="about_para"> I'm a rising Senior in Computer Science at the University of Michigan. Currently seeking fulltime positions begininning in 2019 after my graduation.</p>
 
