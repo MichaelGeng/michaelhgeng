@@ -18,7 +18,7 @@ class Buttons extends Component {
 
           {/* Indicates caution should be taken with this action */}
           <Button bsStyle="warning">Contact</Button>
-        </ButtonToolbar>;
+        </ButtonToolbar>
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Bio.css'
 import Favicon from 'react-favicon';
+import ReactRevealText from 'react-reveal-text';
 const photo = require('../images/hike_dogmt.jpg')
 const favicon = require('../images/MG.png')
 
@@ -10,7 +11,7 @@ class Bio extends Component {
       <div>
           <Favicon url = {favicon} />
           <img src = {photo} id = "selfie" alt="me"/>
-          <p class="about_para"> I'm a Junior in Computer Science and Entrepreneurship at the University of Michigan. Since my first programming course, I have developed and continue to improve my foundation in data structures and algorithms. My passion lies in Ofinding opportunities to apply skills I have learned to create, implement, and solve complex computer science problems businesses face today. After finding a solution, I shift my mindset towards optimizations. How can I make my current program faster, more elegant, and more readable? Making continuous upgrades and seeing the performance improvements is one of my favorite aspects of development.</p>
+          <p class="about_para"> I'm a Senior in Computer Science and Entrepreneurship at the University of Michigan. Since my first programming course, I have developed and continue to improve my foundation in data structures and algorithms. My passion lies in Ofinding opportunities to apply skills I have learned to create, implement, and solve complex computer science problems businesses face today. After finding a solution, I shift my mindset towards optimizations. How can I make my current program faster, more elegant, and more readable? Making continuous upgrades and seeing the performance improvements is one of my favorite aspects of development.</p>
           
           <p class="about_para"> Outside of programming I enjoy working out, traveling, and trying new foods. I am passionate about fitness and the progressive mindset it has given me. Fitness is a break in the day where I can clear my head, unwind, and reset mentally. The realization of pushing my body to perform feats it once couldn't reminds me that hard work goes a long way. This mentality has transferred over into other areas of my life such as taking care of my personal relationships with friends and family and putting my best foot forward in my profession.</p>
           
