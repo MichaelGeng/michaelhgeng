@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactRevealText from 'react-reveal-text';
-import { Button, ButtonToolbar } from 'react-bootstrap';
 import Delay from 'react-delay';
+import './Quote.css';
 
 class Quote extends Component {
     constructor() {
@@ -13,9 +13,6 @@ class Quote extends Component {
         setTimeout(() => {
           this.setState({ show_quote: true });
         }, 2000);
-        setTimeout(() => {
-            this.setState({ show_button: true });
-        }, 4000);
       }
     
       render() {
@@ -31,18 +28,12 @@ class Quote extends Component {
             <div>
                 <div style={textStyles}>
                     <ReactRevealText show={this.state.show_quote}>
-                    "I can accept failure, everyone fails at something. But I can't accept not trying." - Michael Jordan
+                        "I can accept failure, everyone fails at something. But I can't accept not trying." - Michael Jordan
                     </ReactRevealText>
                 </div>
                 <Delay wait={4000}>
-                    <ButtonToolbar>
-                        <Button bsStyle="primary" bsSize="large" active>
-                            My Story
-                        </Button>
-                        <Button bsSize="large" active>
-                            Resume
-                        </Button>
-                    </ButtonToolbar>
+                    <button>My Story</button>
+                    <button>Resume</button>
                 </Delay>
             </div>
         );
