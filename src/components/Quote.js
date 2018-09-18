@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ReactRevealText from 'react-reveal-text';
-import Delay from 'react-delay';
 import './Quote.css';
 
 class Quote extends Component {
@@ -31,10 +30,6 @@ class Quote extends Component {
                         "I can accept failure, everyone fails at something. But I can't accept not trying." - Michael Jordan
                     </ReactRevealText>
                 </div>
-                <Delay wait={4000}>
-                    <button>My Story</button>
-                    <button>Resume</button>
-                </Delay>
             </div>
         );
       }
