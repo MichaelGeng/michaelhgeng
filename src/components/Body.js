@@ -12,7 +12,7 @@ class Body extends Component {
         this.handleContactClick = this.handleContactClick.bind(this);
 
     }
-
+    // TODO: Have it load components instead of variables
     handleStoryClick(){
         this.setState({show_about: !this.state.show_about});
     }
@@ -30,7 +30,7 @@ class Body extends Component {
                     <button onClick={this.handleResumeClick}>Resume</button>
                     <button onClick={this.handleContactClick}>Contact</button>
                 </Delay>
-
+                <p>This site is currently undergoing reconstruction 9/18/18</p>
                 { this.state.show_about ? <p>it works</p> : null}
                 { this.state.show_resume ? <p>resume stufff</p> : null}
                 { this.state.show_contact ? <p>Contact information</p> : null}
