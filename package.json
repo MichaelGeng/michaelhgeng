@@ -16,7 +16,7 @@
     "react-favicon": "0.0.14",
     "react-reveal": "^1.2.2",
     "react-reveal-text": "^0.1.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^1.1.5",
     "react-typed": "^1.0.8",
     "react-typist": "^2.0.4",
     "recharts": "^1.0.0-beta.10",
