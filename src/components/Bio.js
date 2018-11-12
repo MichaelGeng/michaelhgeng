@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Bio.css'
 import Favicon from 'react-favicon';
-import ReactRevealText from 'react-reveal-text';
 const photo = require('../images/hike_dogmt.jpg')
 const favicon = require('../images/MG.png')
 
