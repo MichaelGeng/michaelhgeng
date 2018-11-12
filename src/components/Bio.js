@@ -11,7 +11,9 @@ class Bio extends Component {
       <div>
           <Favicon url = {favicon} />
           <img src = {photo} id = "selfie" alt="me"/>
-          <p> Rising Senior in Computer Science at the University of Michigan. Currently seeking Full Time positions for 2019.</p>
+          <p> I will be graduating in December 2018 with a Bachelors in Science 
+              in Computer Science from the University of Michigan. Afterwards I 
+              will be a Software Engineer I at Nike in Portland, Oregon.</p>
       </div>
     )
   }
