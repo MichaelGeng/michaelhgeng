@@ -14,18 +14,21 @@ const data = [
 class Chart extends Component {
   render() {
     return (
-      <div>
-        <RadarChart cx={300} cy={250} outerRadius={150} width={600} height={500} data={data}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={30} domain={[0, 150]}/>
-            <Radar name="2015" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6}/>
-            <Radar name="2016" dataKey="B" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}/>
-            <Radar name="2017" dataKey="C" stroke="#82b3ca" fill="#82b3ca" fillOpacity={0.6}/>
-            <Radar name="2018" dataKey="D" stroke="#9b5da3" fill="#9b5da3" fillOpacity={0.6}/>
-            <Legend />
-            
-          </RadarChart>
+      <div id="resume">
+        <p>My resume can be downloaded <a href="Michael_Geng_Resume.pdf">here</a></p>
+        <div>
+          <RadarChart cx={300} cy={250} outerRadius={150} width={600} height={500} data={data}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey="subject" />
+              <PolarRadiusAxis angle={30} domain={[0, 150]}/>
+              <Radar name="2015" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6}/>
+              <Radar name="2016" dataKey="B" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}/>
+              <Radar name="2017" dataKey="C" stroke="#82b3ca" fill="#82b3ca" fillOpacity={0.6}/>
+              <Radar name="2018" dataKey="D" stroke="#9b5da3" fill="#9b5da3" fillOpacity={0.6}/>
+              <Legend />
+              
+            </RadarChart>
+        </div>      
       </div>
     )
   }
