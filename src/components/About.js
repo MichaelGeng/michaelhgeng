@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import './Bio.css'
+import './About.css'
 import Favicon from 'react-favicon';
 const photo = require('../images/hike_dogmt.jpg')
 const favicon = require('../images/MG.png')
 
-class Bio extends Component {
+class About extends Component {
   render() {
     return (
       <div>
@@ -18,4 +18,4 @@ class Bio extends Component {
   }
 }
 
-export default Bio;
+export default About;
