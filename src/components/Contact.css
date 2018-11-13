@@ -1,9 +1,16 @@
 #social{
 	text-align: center;
+	display: inline;
 }
 
 .sociali{
 	list-style: none;
+}
+
+/* newly added */
+#social li {
+	float: right;
+	padding: 10px;
 }
 
 .sociali a{
