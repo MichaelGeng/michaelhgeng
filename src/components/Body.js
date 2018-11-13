@@ -3,6 +3,7 @@ import Delay from 'react-delay';
 import About from './About';
 import Chart from './Chart';
 import Contact from './Contact';
+import Home from './Home';
 
 class Body extends Component {
     constructor() {
@@ -13,9 +14,8 @@ class Body extends Component {
         this.handleStoryClick = this.handleStoryClick.bind(this);
         this.handleResumeClick = this.handleResumeClick.bind(this);
         this.handleContactClick = this.handleContactClick.bind(this);
-
     }
-    // TODO: Have it load components instead of variables
+
     handleHomeClick(){
         this.setState({show_home: true, show_about: false, show_resume: false, show_contact: false});
     }
@@ -37,7 +37,7 @@ class Body extends Component {
                     <button onClick={this.handleResumeClick}>Resume</button>
                     <button onClick={this.handleContactClick}>Contact</button>
                 </Delay>
-                <p><b>This site is currently undergoing reconstruction 11/12/18</b></p>
+                { this.state.show_home ? <Home /> : null}
                 { this.state.show_about ? <About /> : null}
                 { this.state.show_resume ? <Chart /> : null}
                 { this.state.show_contact ? <Contact /> : null}
