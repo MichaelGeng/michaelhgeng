@@ -1,4 +1,4 @@
-1. Implement react-chartjs (https://github.com/reactjs/react-chartjs)
+1. Look at React Reveal and React-textfit
 2. Implement Social Media Buttons
 4. Look into React-Bootstrap (https://reactstrap.github.io/)
 5. React Social Icons (https://www.npmjs.com/package/react-social-icons)
