@@ -11,7 +11,7 @@ class Quote extends Component {
       componentDidMount() {
         setTimeout(() => {
           this.setState({ show_quote: true });
-        }, 2000);
+        }, 7000);
       }
     
       render() {
