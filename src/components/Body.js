@@ -4,6 +4,9 @@ import About from './About';
 import Chart from './Chart';
 import Contact from './Contact';
 import Home from './Home';
+import Typed from './Typed';
+import './Body.css';
+
 
 class Body extends Component {
     constructor() {
@@ -30,17 +33,22 @@ class Body extends Component {
     }
     render() {
         return (
-            <div>
-                <Delay wait={4000}>
-                    <button onClick={this.handleHomeClick}>Home</button>
-                    <button onClick={this.handleStoryClick}>About</button>
-                    <button onClick={this.handleResumeClick}>Resume</button>
-                    <button onClick={this.handleContactClick}>Contact</button>
-                </Delay>
-                { this.state.show_home ? <Home /> : null}
-                { this.state.show_about ? <About /> : null}
-                { this.state.show_resume ? <Chart /> : null}
-                { this.state.show_contact ? <Contact /> : null}
+            <div id = "parent">
+                <div id = "buttons">
+                    <Delay wait={6000}>
+                        <button onClick={this.handleHomeClick}>Home</button>
+                        <button onClick={this.handleStoryClick}>About</button>
+                        <button onClick={this.handleResumeClick}>Resume</button>
+                        <button onClick={this.handleContactClick}>Contact</button>
+                    </Delay>
+                </div>
+                <div id = "content">
+                    <Typed />
+                    { this.state.show_home ? <Home /> : null}
+                    { this.state.show_about ? <About /> : null}
+                    { this.state.show_resume ? <Chart /> : null}
+                    { this.state.show_contact ? <Contact /> : null}
+                </div>            
             </div>
         )
     }
