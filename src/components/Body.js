@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Home from './Home';
 import Typed from './Typed';
 import './Body.css';
+import { Button } from 'reactstrap';
 
 
 class Body extends Component {
@@ -36,10 +37,10 @@ class Body extends Component {
             <div id = "parent">
                 <div id = "buttons">
                     <Delay wait={6000}>
-                        <button onClick={this.handleHomeClick}>Home</button>
-                        <button onClick={this.handleStoryClick}>About</button>
-                        <button onClick={this.handleResumeClick}>Resume</button>
-                        <button onClick={this.handleContactClick}>Contact</button>
+                        <Button onClick={this.handleHomeClick} outline color="primary">Home</Button>{' '}
+                        <Button onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
+                        <Button onClick={this.handleResumeClick} outline color="success">Resume</Button>{' '}
+                        <Button onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
                     </Delay>
                 </div>
                 <div id = "content">
