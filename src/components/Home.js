@@ -7,6 +7,7 @@ class Home extends Component {
         <div id="home">
             <p><b>This site is currently undergoing reconstruction 11/14/18</b></p>
             <p>This website is currently being reimplented with React.</p>
+            <p>Source code can be found on my <a href="https://github.com/MichaelGeng/michaelhgeng">GitHub</a>.</p>
             <Quote />
         </div>
     );
