@@ -7,6 +7,7 @@ import Home from './Home';
 import Typed from './Typed';
 import './Body.css';
 import { Button } from 'reactstrap';
+import Favicon from 'react-favicon';
 
 
 class Body extends Component {
@@ -41,6 +42,7 @@ class Body extends Component {
     render() {
         return (
             <div id = "parent">
+                <Favicon url = "/images/MG.png" />
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
                 <Delay wait={8000}>
                     <div id = "buttons">
