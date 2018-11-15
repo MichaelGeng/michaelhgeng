@@ -12,13 +12,19 @@ import { Button } from 'reactstrap';
 class Body extends Component {
     constructor() {
         super();
-        this.state = { show_home: true, show_about: false, show_resume: false, show_contact: false };
+        this.state = { show_intro: true, show_home: true, show_about: false, show_resume: false, show_contact: false };
 
         this.handleHomeClick = this.handleHomeClick.bind(this);
         this.handleStoryClick = this.handleStoryClick.bind(this);
         this.handleResumeClick = this.handleResumeClick.bind(this);
         this.handleContactClick = this.handleContactClick.bind(this);
     }
+
+    componentDidMount() {
+        setTimeout(() => {
+          this.setState({ show_intro: false });
+        }, 7000);
+      }
 
     handleHomeClick(){
         this.setState({show_home: true, show_about: false, show_resume: false, show_contact: false});
@@ -35,21 +41,21 @@ class Body extends Component {
     render() {
         return (
             <div id = "parent">
-                <div id = "buttons">
-                    <Delay wait={6000}>
-                        <Button onClick={this.handleHomeClick} outline color="primary">Home</Button>{' '}
-                        <Button onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
-                        <Button onClick={this.handleResumeClick} outline color="success">Resume</Button>{' '}
-                        <Button onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
-                    </Delay>
-                </div>
-                <div id = "content">
-                    <Typed />
-                    { this.state.show_home ? <Home /> : null}
-                    { this.state.show_about ? <About /> : null}
-                    { this.state.show_resume ? <Chart /> : null}
-                    { this.state.show_contact ? <Contact /> : null}
-                </div>            
+                <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
+                <Delay wait={8000}>
+                    <div id = "buttons">
+                            <Button onClick={this.handleHomeClick} outline color="primary">Home</Button>{' '}
+                            <Button onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
+                            <Button onClick={this.handleResumeClick} outline color="warning">Resume</Button>{' '}
+                            <Button onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
+                    </div>
+                    <div id = "content">
+                        { this.state.show_home ? <Home /> : null}
+                        { this.state.show_about ? <About /> : null}
+                        { this.state.show_resume ? <Chart /> : null}
+                        { this.state.show_contact ? <Contact /> : null}
+                    </div>   
+                </Delay>         
             </div>
         )
     }
