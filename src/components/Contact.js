@@ -6,11 +6,12 @@ class Contact extends Component {
   render() {
     return (
       <div class="middle">
-        <a class="contact_btn" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="contact_btn" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="contact_btn" href="#"><i class="fab fa-google"></i></a>
-        <a class="contact_btn" href="#"><i class="fab fa-instagram"></i></a>
-        <a class="contact_btn" href="#"><i class="fab fa-youtube"></i></a>
+        <p>Please reach out at mikegeng@umich.edu for conversation!</p>
+        <a class="contact_btn" href="https://github.com/MichaelGeng"><i class="fab fa-github"></i></a>
+        <a class="contact_btn" href="https://www.linkedin.com/in/michael-geng/"><i class="fab fa-linkedin-in"></i></a>
+        <a class="contact_btn" href="mailto:mikegeng@umich.edu"><i class="fas fa-envelope"></i></a>
+        <a class="contact_btn" href="tel:734-546-5913"><i class="fas fa-phone"></i></a>
+        <a class="contact_btn" href="https://www.instagram.com/mikeegeng/"><i class="fab fa-instagram"></i></a>
       </div>
     );
   }
