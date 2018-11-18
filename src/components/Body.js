@@ -44,12 +44,12 @@ class Body extends Component {
             <div id = "parent">
                 <Favicon url = "/images/MG.png" />
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
-                <Delay wait={8000}>
+                <Delay wait={1000}>
                     <div id = "buttons">
-                            <Button onClick={this.handleHomeClick} outline color="primary">Home</Button>{' '}
-                            <Button onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
-                            <Button onClick={this.handleResumeClick} outline color="warning">Resume</Button>{' '}
-                            <Button onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
+                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleHomeClick} outline color="primary">Home</Button>{' '}
+                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
+                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleResumeClick} outline color="warning">Resume</Button>{' '}
+                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
                     </div>
                     <div id = "content">
                         { this.state.show_home ? <Home /> : null}
