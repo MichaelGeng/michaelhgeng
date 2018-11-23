@@ -44,8 +44,8 @@ class Body extends Component {
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
                  {/* <Delay wait={1000}> */}
                  <ul>
-                        <li><span id={this.state.show_home} onClick={(e) => {this.navClick(e)}}>Home</span></li>
-                        <li><span id={this.state.show_about} onClick={(e) => {this.navClick(e)}}>About</span></li>
+                        <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
+                        <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
                 </ul>
                  <div id = "bodyContainer">
 
