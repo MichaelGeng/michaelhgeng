@@ -1,3 +1,3 @@
-1. Active Status of Buttons
-2. Clean Up Resume (Use LineChart)
-3. Add some padding between buttons and content
+1. Responsive Design
+2. Particles
+3. Skills / Bio
