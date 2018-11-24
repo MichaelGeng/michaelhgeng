@@ -51,10 +51,11 @@ class Body extends Component {
                     <div id = "content">
                         { this.state.show_home === "active home" ? <Home /> : null}
                         { this.state.show_about === "active about" ? <About /> : null}
-                        { this.state.show_resume ? <Chart /> : null}
-                        { this.state.show_contact ? <Contact /> : null}
                     </div>   
                 {/* </Delay> */}
+                </div>
+                <div id = "footer">
+                    <Contact />
                 </div>        
             </div>
         )

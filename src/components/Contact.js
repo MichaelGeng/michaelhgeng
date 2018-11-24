@@ -5,7 +5,7 @@ import './Contact.css';
 class Contact extends Component {
   render() {
     return (
-      <div class="middle">
+      <div>
         <p>Please reach out at mikegeng@umich.edu for conversation!</p>
         <a class="contact_btn" href="https://github.com/MichaelGeng"><i class="fab fa-github"></i></a>
         <a class="contact_btn" href="https://www.linkedin.com/in/michael-geng/"><i class="fab fa-linkedin-in"></i></a>
