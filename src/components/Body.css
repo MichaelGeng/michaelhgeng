@@ -91,10 +91,11 @@ span[id^="active"]{
       top: 0;
     }
     .topnav.responsive li {
-      float: left;
+      float: left; /* None: Vertical, left: Horizontal */
       display: block;
       text-align: left;
     }
+    /* Moves Home About to Left */
     .topnav.responsive{
         float: left;
     }
