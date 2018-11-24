@@ -48,16 +48,9 @@ class Body extends Component {
                         <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
                 </ul>
                  <div id = "bodyContainer">
-
-                    <div id = "buttons">
-                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleHomeClick} outline color="primary" active>Home</Button>{' '}
-                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleStoryClick} outline color="secondary">About</Button>{' '}
-                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleResumeClick} outline color="warning">Resume</Button>{' '}
-                            <Button style={{"height": "100%", "width": "23%", "minWidth": "46px"}} onClick={this.handleContactClick} outline color="success">Contact</Button>{' '}
-                    </div>
                     <div id = "content">
-                        { this.state.show_home ? <Home /> : null}
-                        { this.state.show_about ? <About /> : null}
+                        { this.state.show_home === "active home" ? <Home /> : null}
+                        { this.state.show_about === "active about" ? <About /> : null}
                         { this.state.show_resume ? <Chart /> : null}
                         { this.state.show_contact ? <Contact /> : null}
                     </div>   
