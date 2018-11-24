@@ -155,27 +155,31 @@ class Body extends Component {
             <div id = "parent">
                 <Favicon url = "/images/MG.png" />
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
+
                  <ul className={this.state.nav_class}>
                         <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                         <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
                         <li className="icon"><i onClick={this.responsiveView} className="fa fa-bars"></i></li>
                 </ul>
+
                 <div id = "header">
                     <p>All header infoo</p>
                     <Particles
-                        style={{top: 0, width: "100%", height: "100%"}} params={particlesConfig}
+                        height={400} style={{zIndex: 0, top: 0, position: "absolute"}} params={particlesConfig}
                     />
-
                 </div>
+
                  <div id = "bodyContainer">
                     <div id = "content">
                         { this.state.show_home === "active home" ? <Home /> : null}
                         { this.state.show_about === "active about" ? <About /> : null}
                     </div>   
                 </div>
+
                 <div id = "footer">
                     <Contact />
-                </div>        
+                </div>  
+      
             </div>
         )
     }
