@@ -12,9 +12,10 @@ import Favicon from 'react-favicon';
 class Body extends Component {
     constructor() {
         super();
-        this.state = { show_intro: true, show_home: "active home", show_about: "about" };
+        this.state = { show_intro: true, show_home: "active home", show_about: "about", nav_class: "topnav" };
 
         this.navClick = this.navClick.bind(this);
+        this.responsiveView = this.responsiveView.bind(this);
     }
 
     componentDidMount() {
@@ -24,28 +25,32 @@ class Body extends Component {
       }
 
     navClick(e){
-        console.log('clicked on about');
-
-        console.log(e.target.id);
-
         if (e.target.id === this.state.show_home){
-            console.log('home is active');
             this.setState({show_home: "active home", show_about: "about"});
         } else {
             this.setState({show_home: "home", show_about: "active about"});
         }
     }
+
+    responsiveView(){
+        console.log('before: ' + this.state.nav_class);
+        if (this.state.nav_class == "topnav") {
+            this.setState({nav_class: "topnav responsive"})
+        } else {
+            this.setState({nav_class: "topnav"})
+        }
+        console.log('after: ' + this.state.nav_class);
+    }
     render() {
-        let home = this.state.show_home;
-        let about = this.state.show_about;
         return (
             <div id = "parent">
                 <Favicon url = "/images/MG.png" />
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
                  {/* <Delay wait={1000}> */}
-                 <ul>
+                 <ul className={this.state.nav_class}>
                         <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                         <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
+                        <li className="icon"><i onClick={this.responsiveView} className="fa fa-bars"></i></li>
                 </ul>
                  <div id = "bodyContainer">
                     <div id = "content">
