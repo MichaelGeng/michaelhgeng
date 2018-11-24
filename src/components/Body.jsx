@@ -9,115 +9,115 @@ import Favicon from 'react-favicon';
 
 // Inspiration: https://github.com/eneax/eneax.github.io/blob/master/src/layouts/index.js
 const particlesConfig = {
-    "particles": {
-      "number": {
-        "value": 25,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#070000"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": true,
-          "speed": 10,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
+  "particles": {
+    "number": {
+      "value": 104,
+      "density": {
         "enable": true,
-        "distance": 150,
-        "color": "#070000",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
+        "value_area": 1025.8919341219544
       }
     },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": false,
-          "mode": "push"
-        },
-        "resize": true
+    "color": {
+      "value": "#3498db"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
       },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
       }
     },
-    "retina_detect": true
-  }
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3.945738208161363,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 0,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#3498db",
+      "opacity": 0.39457382081613634,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "remove"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 167.83216783216784,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
   
 
 class Body extends Component {
@@ -144,20 +144,17 @@ class Body extends Component {
     }
 
     responsiveView(){
-        console.log('before: ' + this.state.nav_class);
         if (this.state.nav_class === "topnav") {
             this.setState({nav_class: "topnav responsive"})
         } else {
             this.setState({nav_class: "topnav"})
         }
-        console.log('after: ' + this.state.nav_class);
     }
     render() {
         return (
             <div id = "parent">
                 <Favicon url = "/images/MG.png" />
                 <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
-                 {/* <Delay wait={1000}> */}
                  <ul className={this.state.nav_class}>
                         <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                         <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
@@ -166,7 +163,7 @@ class Body extends Component {
                 <div id = "header">
                     <p>All header infoo</p>
                     <Particles
-                        params={particlesConfig}
+                        style={{top: 0, width: "100%", height: "100%"}} params={particlesConfig}
                     />
 
                 </div>
@@ -175,7 +172,6 @@ class Body extends Component {
                         { this.state.show_home === "active home" ? <Home /> : null}
                         { this.state.show_about === "active about" ? <About /> : null}
                     </div>   
-                {/* </Delay> */}
                 </div>
                 <div id = "footer">
                     <Contact />
