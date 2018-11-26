@@ -163,9 +163,12 @@ class Body extends Component {
                 </ul>
 
                 <div id = "header">
-                    <p>All header infoo</p>
+                    <div id = "textEntry">
+                      <h1>Michael Geng</h1>
+                      <h3>University of Michigan Graduate. Incoming Software Engineer at Nike.</h3>
+                    </div>
                     <Particles
-                        height={400} style={{zIndex: 0, top: 0, position: "absolute"}} params={particlesConfig}
+                        height={400} style={{top: 0, position: "absolute"}} params={particlesConfig}
                     />
                 </div>
 
