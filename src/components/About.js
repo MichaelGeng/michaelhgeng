@@ -19,7 +19,7 @@ class About extends Component {
 
               <ReactFitText minFontSize = {12} maxFontSize={15}>
                 <p>In Summer 2018, I worked at Nike as an Application Engineer Intern on the Rapid Application Development Team. I 
-                  implemnted a Slack Bot in Python to assist with daily stand ups and worked on user interface engineering with React.</p>
+                   implemented a Slack Bot in Python to aid with daily stand-ups and worked on user interface engineering with React.</p>
               </ReactFitText>
 
               <ReactFitText minFontSize = {12} maxFontSize={15}>
@@ -28,9 +28,9 @@ class About extends Component {
               </ReactFitText>
 
               <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Summer 2016, I worked at Advantage Computing Systems as an Systems Analyst Intern on the Client Services Team. I
-                  worked with a developers, business analysts, and VP's to aid in large-scale data migration using mySQL. I also worked
-                  on automating time-off requests with Python, elminating paper usage and saving time.</p>
+                <p>In Summer 2016, I worked at Advantage Computing Systems as a Systems Analyst Intern on the Client Services Team. I
+                  worked with developers, business analysts, and VP's to aid in large-scale data migration using MySQL. I also worked
+                  on automating time-off requests with Python, eliminating paper usage and saving time.</p>
               </ReactFitText>
             </Col>
           </Row>
