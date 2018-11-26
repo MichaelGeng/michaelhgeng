@@ -168,7 +168,7 @@ class Body extends Component {
                       <h3>University of Michigan Graduate. Incoming Software Engineer at Nike.</h3>
                     </div>
                     <Particles
-                        height={400} style={{top: 0, position: "absolute"}} params={particlesConfig}
+                        height={300} style={{top: 0, position: "absolute"}} params={particlesConfig}
                     />
                 </div>
 
