@@ -57,7 +57,7 @@ class About extends Component {
 
           <Row>
             <Col xs="12" sm="3">Resume</Col>
-            <Col xs="12" sm="9"><button>View My Resume</button></Col>
+            <Col xs="12" sm="9"><a href="/Michael_Geng_Resume.pdf" target="_blank"><button>View My Resume</button></a></Col>
           </Row>
         </Container>
       </div>
