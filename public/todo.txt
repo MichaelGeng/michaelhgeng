@@ -1,6 +1,4 @@
-1. Layout
-2. Hidden Side Menu
-3. About
-4. Picture
-5. Skills
-6. Bootstrap columns? Or responsive columns.
+1. Adjust Column Fonts/Text Size
+2. Added Info on Home for Website Info
+3. Side Hidden Navbar for Mobile View
+4. Update README.md
