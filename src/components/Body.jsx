@@ -150,8 +150,13 @@ class Body extends Component {
     }
 
     responsiveView(){
-      document.getElementById("mySidenav").style.width = "150px";
-      document.getElementById("parent").style.marginRight = "150px";
+      if (document.getElementById("mySidenav").style.width == "150px"){
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("parent").style.marginRight = "0";
+      } else {
+        document.getElementById("mySidenav").style.width = "150px";
+        document.getElementById("parent").style.marginRight = "150px";
+      }
     }
     render() {
         return (

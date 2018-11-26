@@ -79,7 +79,7 @@ span[id^="active"]{
     right: 0;
     background-color: #232728;
     overflow-x: hidden;
-    transition: 1.0s;
+    transition: 2s;
     padding-top: 25px;
     font-size: 25px;
     color: white;
