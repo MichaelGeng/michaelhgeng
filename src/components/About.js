@@ -10,7 +10,7 @@ class About extends Component {
         <img src = "/images/hike_dogmt.jpg" id = "selfie" alt="me"/>
         <Container>
           <Row>
-            <Col xs="12" sm="3">About me</Col>
+            <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
               <ReactFitText minFontSize = {12} maxFontSize={15}>
                 <p>In Winter 2018, I will be graduating from the University of Michigan with a B.S. 
@@ -36,7 +36,7 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="12" sm="3">Skills</Col>
+            <Col xs="12" sm="3" className="left">SKILLS</Col>
             <Col xs="12" sm="9">
               <Row>
                 <Col xs="12" sm="3">Programming Languages
@@ -56,8 +56,8 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="12" sm="3">Resume</Col>
-            <Col xs="12" sm="9"><a href="/Michael_Geng_Resume.pdf" target="_blank"><button>View My Resume</button></a></Col>
+            <Col xs="12" sm="3" className="left">RESUME</Col>
+            <Col xs="12" sm="9"><a href="/Michael_Geng_Resume.pdf" target="_blank"><button className="parentButton">View Resume <i className="fas fa-file hvr-grow-rotate"></i></button></a></Col>
           </Row>
         </Container>
       </div>
