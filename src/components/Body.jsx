@@ -126,6 +126,7 @@ class Body extends Component {
         this.state = { show_home: "active home", show_about: "about", nav_class: "topnav" };
 
         this.navClick = this.navClick.bind(this);
+        this.sideClick = this.sideClick.bind(this);
         this.responsiveView = this.responsiveView.bind(this);
     }
 
@@ -137,27 +138,40 @@ class Body extends Component {
         }
     }
 
+    sideClick(e){
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("parent").style.marginRight = "0";
+
+      if (e.target.id === this.state.show_home){
+        this.setState({show_home: "active home", show_about: "about"});
+      } else {
+        this.setState({show_home: "home", show_about: "active about"});
+      }
+    }
+
     responsiveView(){
-        if (this.state.nav_class === "topnav") {
-            this.setState({nav_class: "topnav responsive"})
-        } else {
-            this.setState({nav_class: "topnav"})
-        }
+      document.getElementById("mySidenav").style.width = "150px";
+      document.getElementById("parent").style.marginRight = "150px";
     }
     render() {
         return (
             <div id = "parent">
-                <Favicon url = "/images/MG.png" />
+              <Favicon url = "/images/MG.png" />
+                <div id="mySidenav" class="sidenav">
+                  <li><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
+                  <li><span id={this.state.show_about}  onClick={this.sideClick}>About</span></li>
+                </div>
                  <ul className={this.state.nav_class}>
-                        <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
-                        <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
-                        <li className="icon"><i onClick={this.responsiveView} className="fa fa-bars"></i></li>
+                    <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
+                    <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
+                    <li className="icon"><i onClick={this.responsiveView} className="fa fa-bars"></i></li>
                 </ul>
 
                 <div id = "header">
                     <div id = "textEntry">
                       <h1>Michael Geng</h1>
                       <h3>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</h3>
+                      <h3><b>This site is currently undergoing reconstruction as of 11/26/18.</b></h3>
                       <Typed />
                     </div>
                     <Particles
