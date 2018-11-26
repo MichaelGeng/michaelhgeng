@@ -123,17 +123,11 @@ const particlesConfig = {
 class Body extends Component {
     constructor() {
         super();
-        this.state = { show_intro: true, show_home: "active home", show_about: "about", nav_class: "topnav" };
+        this.state = { show_home: "active home", show_about: "about", nav_class: "topnav" };
 
         this.navClick = this.navClick.bind(this);
         this.responsiveView = this.responsiveView.bind(this);
     }
-
-    componentDidMount() {
-        setTimeout(() => {
-          this.setState({ show_intro: false });
-        }, 7000);
-      }
 
     navClick(e){
         if (e.target.id === this.state.show_home){
@@ -154,8 +148,6 @@ class Body extends Component {
         return (
             <div id = "parent">
                 <Favicon url = "/images/MG.png" />
-                <div id = "intro">{ this.state.show_intro ? <Typed /> : null }</div>
-
                  <ul className={this.state.nav_class}>
                         <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                         <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
@@ -165,7 +157,8 @@ class Body extends Component {
                 <div id = "header">
                     <div id = "textEntry">
                       <h1>Michael Geng</h1>
-                      <h3>University of Michigan Graduate. Incoming Software Engineer at Nike.</h3>
+                      <h3>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</h3>
+                      <Typed />
                     </div>
                     <Particles
                         height={300} style={{top: 0, position: "absolute"}} params={particlesConfig}
