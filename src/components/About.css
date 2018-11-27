@@ -18,6 +18,14 @@ button{
     border-radius: 2px;
 }
 
+.skill_section, a {
+    color: #3498db;
+}
+
+.skill_section {
+    text-decoration: underline;
+}
+
 /* Grow Rotate */
 .hvr-grow-rotate {
     display: inline-block;
