@@ -24,6 +24,11 @@ p, .parentButton{
     width: 100%;
 }
 
+#react_strap{
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
 button{
     background: transparent;
     border: 2px solid #3498db;
