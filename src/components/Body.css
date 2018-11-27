@@ -1,16 +1,18 @@
+#parent{
+    position: absolute;
+    top: 0;
+}
+
 #header{
     height: 300px;
-    border: 2px solid pink;
+    position: relative;
+    width: 100%;
     z-index: 0;
 }
-
 #textEntry{
-    margin: 100px;
+    padding: 100px;
 }
-
 #bodyContainer {
-    border: 2px solid black;
-    /*padding: 15px; /* Push everything inwards*/
     padding-bottom: 15px;
 
 }
@@ -32,7 +34,6 @@
     padding: 0;
     font-size: 24px;
     float: right;
-    border: 2px solid purple;
     z-index: 5;
     position: relative;
 }
