@@ -139,8 +139,8 @@ class Body extends Component {
     }
 
     sideClick(e){
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("parent").style.marginRight = "0";
+      document.getElementById("mySidenav").style.transform = "translate(100%)";
+      document.getElementById("other").style.transform = "translate(0%)";
 
       if (e.target.id === this.state.show_home){
         this.setState({show_home: "active home", show_about: "about"});
@@ -150,22 +150,30 @@ class Body extends Component {
     }
 
     responsiveView(){
-      if (document.getElementById("mySidenav").style.width == "150px"){
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("parent").style.marginRight = "0";
+      console.log(document.getElementById("mySidenav").style.transform);
+
+      //initial case
+      if (document.getElementById("mySidenav").style.transform === "" || document.getElementById("mySidenav").style.transform == "translate(100%)"){
+        document.getElementById("mySidenav").style.transform = "translate(0%)";
+        document.getElementById("other").style.transform = "translate(-30%)";
       } else {
-        document.getElementById("mySidenav").style.width = "150px";
-        document.getElementById("parent").style.marginRight = "150px";
+        document.getElementById("mySidenav").style.transform = "translate(100%)";
+        document.getElementById("other").style.transform = "translate(0%)";
       }
     }
     render() {
         return (
             <div id = "parent">
               <Favicon url = "/images/MG.png" />
-                <div id="mySidenav" class="sidenav">
-                  <li><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
-                  <li><span id={this.state.show_about}  onClick={this.sideClick}>About</span></li>
+
+                <div id="mySidenav">
+                  <div id="inner">
+                    <li><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
+                    <li><span id={this.state.show_about}  onClick={this.sideClick}>About</span></li>
+                  </div>
                 </div>
+
+                <div id ="other">
                  <ul className={this.state.nav_class}>
                     <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                     <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
@@ -194,7 +202,7 @@ class Body extends Component {
                 <div id = "footer">
                     <Contact />
                 </div>  
-      
+              </div>
             </div>
         )
     }

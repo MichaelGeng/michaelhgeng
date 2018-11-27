@@ -69,19 +69,29 @@ span[id^="active"]{
 }
 
 /* Hidden Side Nav */
-.sidenav {
-    list-style-type: none;
-    height: 100%;
-    width: 0;
+#mySidenav {
     position: fixed;
-    z-index: 1;
     top: 0;
+    bottom: 0;
     right: 0;
-    background-color: #232728;
-    overflow-x: hidden;
-    transition: 2s;
-    padding-top: 25px;
-    font-size: 25px;
+    width: 30%;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+    list-style-type: none;
+}
+
+#inner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
     color: white;
-    text-align: center;
+    overflow: auto;
+    padding: 1em;
+}
+
+#other {
+    transition: .3s ease-out;
 }
