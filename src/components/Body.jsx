@@ -153,7 +153,7 @@ class Body extends Component {
       console.log(document.getElementById("mySidenav").style.transform);
 
       //initial case
-      if (document.getElementById("mySidenav").style.transform === "" || document.getElementById("mySidenav").style.transform == "translate(100%)"){
+      if (document.getElementById("mySidenav").style.transform === "" || document.getElementById("mySidenav").style.transform === "translate(100%)"){
         document.getElementById("mySidenav").style.transform = "translate(0%)";
         document.getElementById("other").style.transform = "translate(-30%)";
       } else {
