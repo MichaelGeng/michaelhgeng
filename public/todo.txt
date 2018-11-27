@@ -1,4 +1,6 @@
 1. Adjust Column Fonts/Text Size
 2. Added Info on Home for Website Info
-3. Update README.md
-4. Load Screen
+4. Load Screen https://ihatetomatoes.net/create-custom-preloading-screen/
+5. Home Screen Section on Features (Responsive - ie media queries, etc)
+6. Media queries for column approach need to be revised
+7. Add Media Queries for font-size in header
