@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactFitText from 'react-fittext'
 import {Container, Row, Col } from 'reactstrap';
 import './About.css'
 
@@ -12,30 +11,20 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
-              <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Spring 2019, I will begin my career as a Software Engineer I at Nike in Portland, Oregon. Team placement is TBD within Nike Digital.</p>
-              </ReactFitText>
+              <p>In Spring 2019, I will begin my career as a Software Engineer I at Nike in Portland, Oregon. Team placement is TBD within Nike Digital.</p>
 
-              <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Winter 2018, I will be graduating from the University of Michigan with a B.S. 
-                   in Computer Science. My coursework heavily revolved around Data Structures, Algorithms, Software Engineering, and Web Development.</p>
-              </ReactFitText>
+              <p>In Winter 2018, I will be graduating from the University of Michigan with a B.S. 
+                  in Computer Science. My coursework heavily revolved around Data Structures, Algorithms, Software Engineering, and Web Development.</p>
 
-              <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Summer 2018, I worked at <a href="https://jobs.nike.com/digital">Nike</a> as an Application Engineer Intern on the Rapid Application Development Team. I 
-                   implemented a Slack Bot in Python to aid with daily stand-ups and worked on user interface engineering with React.</p>
-              </ReactFitText>
+              <p>In Summer 2018, I worked at <a href="https://jobs.nike.com/digital">Nike</a> as an Application Engineer Intern on the Rapid Application Development Team. I 
+                  implemented a Slack Bot in Python to aid with daily stand-ups and worked on user interface engineering with React.</p>
 
-              <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Summer 2017, I worked at <a href="https://www.gmfinancial.com/">General Motors Financial</a> as an IT Special Projects Intern on the international IT Team. I
-                  worked with a team of developers and business analysts to create responsive web pages primarily using jQuery.</p>
-              </ReactFitText>
+              <p>In Summer 2017, I worked at <a href="https://www.gmfinancial.com/">General Motors Financial</a> as an IT Special Projects Intern on the international IT Team. I
+                worked with a team of developers and business analysts to create responsive web pages primarily using jQuery.</p>
 
-              <ReactFitText minFontSize = {12} maxFontSize={15}>
-                <p>In Summer 2016, I worked at <a href="https://www.advantagecs.com/">Advantage Computing Systems</a> as a Systems Analyst Intern on the Client Services Team. I
-                  worked with developers, business analysts, and VP's to aid in large-scale data migration using MySQL. I also worked
-                  on automating time-off requests with Python, eliminating paper usage and saving time.</p>
-              </ReactFitText>
+              <p>In Summer 2016, I worked at <a href="https://www.advantagecs.com/">Advantage Computing Systems</a> as a Systems Analyst Intern on the Client Services Team. I
+                worked with developers, business analysts, and VP's to aid in large-scale data migration using MySQL. I also worked
+                on automating time-off requests with Python, eliminating paper usage and saving time.</p>
             </Col>
           </Row>
 
@@ -43,16 +32,16 @@ class About extends Component {
             <Col xs="12" sm="3" className="left">SKILLS</Col>
             <Col xs="12" sm="9">
               <Row>
-                <Col xs="12" sm="3"><div class="skill_section">Programming</div>
+                <Col xs="12" sm="3"><div className="skill_section">Programming</div>
                   <p>JavaScript <br/>Python<br/>C++<br/>SQL/NoSQL<br/>HTML/CSS</p>
                 </Col>
-                <Col xs="12" sm="3"><div class="skill_section">Frameworks</div>
+                <Col xs="12" sm="3"><div className="skill_section">Frameworks</div>
                   <p>React<br/>Node<br/>jQuery<br/>Flask</p>
                 </Col>
-                <Col xs="12" sm="3"><div class="skill_section">Databases</div>
+                <Col xs="12" sm="3"><div className="skill_section">Databases</div>
                   <p>SQLite<br/>MySQL<br/>MongoDB<br/>DynamoDB</p>
                 </Col>
-                <Col xs="12" sm="3"><div class="skill_section">Libraries/Tools</div>
+                <Col xs="12" sm="3"><div className="skill_section">Libraries/Tools</div>
                   <p>Git<br/>Redux<br/>Webpack<br/>Babel<br/>Rest APIs<br/>AWS</p>
                 </Col>
               </Row>
