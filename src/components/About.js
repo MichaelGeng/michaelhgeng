@@ -7,7 +7,8 @@ class About extends Component {
     return (
       <div id="about">
         <img src = "/images/hike_dogmt.jpg" id = "selfie" alt="me"/>
-        <Container>
+
+        <Container id="react_strap">
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
