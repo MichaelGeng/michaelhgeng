@@ -44,12 +44,7 @@
 }
 
 
-span:hover{
-    border-bottom:2px solid #3498db;
-    padding-bottom:3px;
-}
-
-span[id^="active"]{
+span:hover, span[id^="active"]{
     border-bottom:2px solid #3498db;
     padding-bottom:3px;
 }
@@ -90,8 +85,14 @@ span[id^="active"]{
     color: white;
     overflow: auto;
     padding: 1em;
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
 }
 
+.firstSide {
+    padding-bottom: 20px;
+}
 #other {
     transition: .3s ease-out;
 }

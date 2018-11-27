@@ -168,7 +168,7 @@ class Body extends Component {
 
                 <div id="mySidenav">
                   <div id="inner">
-                    <li><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
+                    <li className="firstSide"><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
                     <li><span id={this.state.show_about}  onClick={this.sideClick}>About</span></li>
                   </div>
                 </div>
