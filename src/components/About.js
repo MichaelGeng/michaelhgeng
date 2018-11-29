@@ -30,6 +30,17 @@ class About extends Component {
           </Row>
 
           <Row>
+            <Col xs="12" sm="3" className="left">EDUCATION</Col>
+            <Col xs="12" sm="9">
+              <p>I graduated Winter 2018 from the University of Michigan with a B.S. in Computer Science. I participated in various
+                Computer Science extracurriculars such as <a href="https://web.eecs.umich.edu/~cseschol/">Code-M</a>,
+                <a href="http://michiganhackers.org/"> Michigan Hackers</a>, and <a href="https://mhacks.org/subscribe">MHacks</a> to further
+                develop my interest outside of classwork.
+              </p>
+            </Col>
+          </Row>
+
+          <Row>
             <Col xs="12" sm="3" className="left">SKILLS</Col>
             <Col xs="12" sm="9">
               <Row>
