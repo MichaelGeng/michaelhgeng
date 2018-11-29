@@ -44,6 +44,11 @@ class Home extends Component {
                   </p>
                 </Col>
               </Row>
+
+              <Row>
+                <Col xs="12" sm="3" className="left">CODE</Col>
+                <Col xs="12" sm="9"><a href="https://github.com/MichaelGeng/michaelhgeng" target="_blank"><button className="parentButton">View Source Code <i className="fas fa-code hvr-grow-rotate"></i></button></a></Col>
+              </Row>
             </Container>
         </div>
     );
