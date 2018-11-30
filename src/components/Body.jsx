@@ -6,6 +6,7 @@ import Home from './Home';
 import Typed from './Typed';
 import './Body.css';
 import Favicon from 'react-favicon';
+import ReactLoading from 'react-loading';
 
 // Inspiration: https://github.com/eneax/eneax.github.io/blob/master/src/layouts/index.js
 const particlesConfig = {
@@ -164,6 +165,7 @@ class Body extends Component {
     render() {
         return (
             <div id = "parent">
+              <ReactLoading type={'cylon'} color="#3498db" />
               <Favicon url = "/images/MG.png" />
 
                 <div id="mySidenav">
@@ -184,7 +186,7 @@ class Body extends Component {
                     <div id = "textEntry">
                       <h1>Michael Geng</h1>
                       <h3>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</h3>
-                      <h3><b>This site is currently undergoing reconstruction as of 11/26/18.</b></h3>
+                      <h3><b>This site is currently undergoing reconstruction as of 11/29/18.</b></h3>
                       <Typed />
                     </div>
                     <Particles
