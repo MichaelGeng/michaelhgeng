@@ -150,9 +150,9 @@ class Body extends Component {
       }
     }
 
-    responsiveView(){
-      console.log(document.getElementById("mySidenav").style.transform);
 
+
+    responsiveView(){
       //initial case
       if (document.getElementById("mySidenav").style.transform === "" || document.getElementById("mySidenav").style.transform === "translate(100%)"){
         document.getElementById("mySidenav").style.transform = "translate(0%)";
@@ -184,9 +184,8 @@ class Body extends Component {
 
                 <div id = "header">
                     <div id = "textEntry">
-                      <h1>Michael Geng</h1>
-                      <h3>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</h3>
-                      <h3><b>This site is currently undergoing reconstruction as of 11/29/18.</b></h3>
+                      <p>Michael Geng</p>
+                      <p>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</p>
                       <Typed />
                     </div>
                     <Particles

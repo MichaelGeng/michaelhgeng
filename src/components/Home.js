@@ -31,7 +31,7 @@ class Home extends Component {
                   <p>The DOM is rendered with <a href="https://reactjs.org/">React</a>. Version control
                      using <a href="https://github.com/">GitHub</a>. Styling with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> CSS</a>.
                      <a href="https://www.npmjs.com/"> Node Package Manager</a> to manage dependencies. 
-                     <a href="https://eslint.org/"> ESLint</a> for writing clean JavaScript code.
+                     <a href="https://github.com/airbnb/javascript"> Airbnb JavaScript ESLint</a> for writing clean components.
                   </p>
                 </Col>
               </Row>
