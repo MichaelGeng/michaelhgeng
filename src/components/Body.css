@@ -97,43 +97,6 @@ span:hover, span[id^="active"]{
     transition: .3s ease-out;
 }
 
-
-	/* Media Header text */
-/* Mobile Devices (landscape phones, 225px and up) */
-@media screen and (min-width:225px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:576px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width:768px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width:992px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+#textEntry p{
+    font-weight: 500;
 }
