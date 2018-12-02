@@ -164,7 +164,7 @@ class Body extends Component {
     }
     render() {
         return (
-            <div id = "parent">
+            <div id="parent">
               <ReactLoading type={'cylon'} color="#3498db" />
               <Favicon url = "/images/MG.png" />
 
