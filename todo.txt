@@ -2,4 +2,3 @@
 6. Media queries for column approach need to be revised
 7. Add Media Queries for font-size in header
 8. Add different header text for Home vs About
-9. Add ESLint https://medium.com/@RossWhitehouse/setting-up-eslint-in-react-c20015ef35f7
