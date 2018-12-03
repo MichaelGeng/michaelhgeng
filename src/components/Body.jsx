@@ -6,7 +6,8 @@ import Home from './Home';
 import Typed from './Typed';
 import './Body.css';
 import Favicon from 'react-favicon';
-import ReactLoading from 'react-loading';
+import { ClipLoader } from 'react-spinners';
+
 
 // Inspiration: https://github.com/eneax/eneax.github.io/blob/master/src/layouts/index.js
 const particlesConfig = {
@@ -124,7 +125,7 @@ const particlesConfig = {
 class Body extends Component {
     constructor() {
         super();
-        this.state = { show_home: "active home", show_about: "about", nav_class: "topnav" };
+        this.state = { show_home: "active home", show_about: "about", nav_class: "topnav", loading: true };
 
         this.navClick = this.navClick.bind(this);
         this.sideClick = this.sideClick.bind(this);
@@ -165,24 +166,28 @@ class Body extends Component {
     render() {
         return (
             <div id="parent">
-              <ReactLoading type={'cylon'} color="#3498db" />
               <Favicon url = "/images/MG.png" />
+              <div className="elementToFadeInAndOut"><ClipLoader sizeUnit={"px"} size={300} color={'#123abc'} /></div>
 
+              <div className="fadeIn">
+                {/* Side Nav */}
                 <div id="mySidenav">
                   <div id="inner">
                     <li className="firstSide"><span id={this.state.show_home} onClick={this.sideClick}>Home</span></li>
                     <li><span id={this.state.show_about}  onClick={this.sideClick}>About</span></li>
                   </div>
                 </div>
-
+                {/* Side Nav */}'
+                
+                {/* Other */}
                 <div id ="other">
-                 <ul className={this.state.nav_class}>
+                  <ul className={this.state.nav_class}>
                     <li><span id={this.state.show_home} onClick={this.navClick}>Home</span></li>
                     <li><span id={this.state.show_about} onClick={this.navClick}>About</span></li>
                     <li className="icon"><i onClick={this.responsiveView} className="fa fa-bars"></i></li>
-                </ul>
+                  </ul>
 
-                <div id = "header">
+                  <div id = "header">
                     <div id = "textEntry">
                       <p>Michael Geng</p>
                       <p>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</p>
@@ -191,18 +196,20 @@ class Body extends Component {
                     <Particles
                         height={300} style={{top: 0, position: "absolute"}} params={particlesConfig}
                     />
-                </div>
+                  </div>
 
-                 <div id = "bodyContainer">
+                  <div id = "bodyContainer">
                     <div id = "content">
-                        { this.state.show_home === "active home" ? <Home /> : null}
-                        { this.state.show_about === "active about" ? <About /> : null}
+                      { this.state.show_home === "active home" ? <Home /> : null}
+                      { this.state.show_about === "active about" ? <About /> : null}
                     </div>   
-                </div>
+                  </div>
 
-                <div id = "footer">
+                  <div id = "footer">
                     <Contact />
-                </div>  
+                  </div>  
+                </div>
+                {/* Other End */}
               </div>
             </div>
         )
