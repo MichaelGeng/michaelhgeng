@@ -9,7 +9,7 @@ class Home extends Component {
         <div id="home">
             <img src = "/images/home_pic.jpg" id = "selfie" alt="me"/>
             <Quote />
-            <h1>THIS PAGE IS CURRENTLY UNDER CONSTRUCTION</h1>
+
             <Container id="react_strap">
               <Row>
                 <Col xs="12" className="center">
