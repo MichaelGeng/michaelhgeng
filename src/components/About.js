@@ -44,16 +44,16 @@ class About extends Component {
             <Col xs="12" sm="3" className="left">SKILLS</Col>
             <Col xs="12" sm="9">
               <Row>
-                <Col xs="12" sm="3"><div className="skill_section">Programming</div>
+                <Col xs="12" sm="3"><div className="skill_section"><i className="fas fa-laptop-code skill_icon"></i>Programming</div>
                   <p>JavaScript <br/>Python<br/>C++<br/>SQL/NoSQL<br/>HTML/CSS</p>
                 </Col>
-                <Col xs="12" sm="3"><div className="skill_section">Frameworks</div>
+                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-server"></i>Frameworks</div>
                   <p>React<br/>Node<br/>jQuery<br/>Flask</p>
                 </Col>
-                <Col xs="12" sm="3"><div className="skill_section">Databases</div>
+                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-database"></i>Databases</div>
                   <p>SQLite<br/>MySQL<br/>MongoDB<br/>DynamoDB</p>
                 </Col>
-                <Col xs="12" sm="3"><div className="skill_section">Libraries/Tools</div>
+                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-cogs"></i>Libraries/Tools</div>
                   <p>Git<br/>Redux<br/>Webpack<br/>Babel<br/>Rest APIs<br/>AWS</p>
                 </Col>
               </Row>

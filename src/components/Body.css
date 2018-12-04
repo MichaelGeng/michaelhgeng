@@ -97,43 +97,35 @@ span:hover, span[id^="active"]{
     transition: .3s ease-out;
 }
 
-
-	/* Media Header text */
-/* Mobile Devices (landscape phones, 225px and up) */
-@media screen and (min-width:225px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+#textEntry p{
+    font-weight: 500;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:576px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+.elementToFadeInAndOut {
+    /* Puts element in middle */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* CSS Animation */
+    
+    animation: fadeinout 2s ease;
+    opacity: 0;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width:768px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+@keyframes fadeinout {
+  50% { opacity: 1; }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width:992px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1; }
 }
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) {
-	p{
-        font-size: 24px;
-        font-weight: 500;
-	}
+
+.fadeIn{
+    opacity: 0;
+    animation: fadein 1s linear forwards;
+    animation-delay: 2.5s;
 }
+

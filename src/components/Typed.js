@@ -7,6 +7,7 @@ class Typed extends Component {
   render() {
     return (
       <Typist>
+        <Typist.Delay ms={4100} />
         <span>Incoming Software Engineer at Nike</span>
         <Typist.Backspace count={34} delay={200} />
         <span>Interested in Web Development</span>

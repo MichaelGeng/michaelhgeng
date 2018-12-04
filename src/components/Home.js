@@ -9,7 +9,7 @@ class Home extends Component {
         <div id="home">
             <img src = "/images/home_pic.jpg" id = "selfie" alt="me"/>
             <Quote />
-            <h1>THIS PAGE IS CURRENTLY UNDER CONSTRUCTION</h1>
+
             <Container id="react_strap">
               <Row>
                 <Col xs="12" className="center">
@@ -25,14 +25,32 @@ class Home extends Component {
                   </p>
                 </Col>
               </Row>
+
               <Row>
-                <Col xs="12" sm="3" className="left">TECH STACK</Col>
+                <Col xs="12" sm="3" className="left">REACT</Col>
                 <Col xs="12" sm="9">
-                  <p>The DOM is rendered with <a href="https://reactjs.org/">React</a>. Version control
-                     using <a href="https://github.com/">GitHub</a>. Styling with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> CSS</a>.
-                     <a href="https://www.npmjs.com/"> Node Package Manager</a> to manage dependencies. 
-                     <a href="https://github.com/airbnb/javascript"> Airbnb JavaScript ESLint</a> for writing clean components.
-                  </p>
+                  <p>The DOM is rendered with <a href="https://reactjs.org/">React</a>.</p> 
+                </Col>
+              </Row>
+
+              <Row>
+                <Col xs="12" sm="3" className="left">LINT</Col>
+                <Col xs="12" sm="9">
+                  <p><a href="https://github.com/airbnb/javascript"> Airbnb's JavaScript ESLint</a> was used in writing clean code.</p>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col xs="12" sm="3" className="left">NPM</Col>
+                <Col xs="12" sm="9">
+                  <p><a href="https://www.npmjs.com/"> Node Package Manager</a> to manage dependencies.</p>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col xs="12" sm="3" className="left">GIT</Col>
+                <Col xs="12" sm="9">
+                  <p>Version control using <a href="https://github.com/">GitHub</a>.</p>
                 </Col>
               </Row>
 
