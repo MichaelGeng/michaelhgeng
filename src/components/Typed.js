@@ -8,8 +8,8 @@ class Typed extends Component {
     return (
       <Typist>
         <Typist.Delay ms={4100} />
-        <span>Incoming Software Engineer at Nike</span>
-        <Typist.Backspace count={34} delay={200} />
+        <span>Software Engineer at Nike</span>
+        <Typist.Backspace count={25} delay={200} />
         <span>Interested in Web Development</span>
         <Typist.Backspace count={29} delay={200} />
         <span>Thanks for stopping by!</span>

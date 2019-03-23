@@ -25,6 +25,15 @@ class Home extends Component {
                   </p>
                 </Col>
               </Row>
+              
+              <Row>
+                <Col xs="12" sm="3" className="left">RESPONSIVE</Col>
+                <Col xs="12" sm="9">
+                  <p>I have followed <a href="https://getbootstrap.com/docs/4.0/layout/overview/">Bootstrap 4's </a> media queries
+                     to account for various devices. If you're on desktop, go ahead and resize the browser window.
+                  </p>
+                </Col>
+              </Row>
 
               <Row>
                 <Col xs="12" sm="3" className="left">REACT</Col>
@@ -51,15 +60,6 @@ class Home extends Component {
                 <Col xs="12" sm="3" className="left">GIT</Col>
                 <Col xs="12" sm="9">
                   <p>Version control using <a href="https://github.com/">GitHub</a>.</p>
-                </Col>
-              </Row>
-
-              <Row>
-                <Col xs="12" sm="3" className="left">RESPONSIVE</Col>
-                <Col xs="12" sm="9">
-                  <p>I have followed <a href="https://getbootstrap.com/docs/4.0/layout/overview/">Bootstrap 4's </a> media queries
-                     to account for various devices. If you're on desktop, go ahead and resize the browser window.
-                  </p>
                 </Col>
               </Row>
 

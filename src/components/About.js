@@ -12,6 +12,9 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
+              <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am on a Backend Engineer on the Assist in Cloud team developing Java and Node.js microservices
+                deployed on AWS solutions.
+              </p>
               <p>In Spring 2019, I will begin my career as a Software Engineer I at Nike in Portland, Oregon. Team placement is TBD within Nike Digital.</p>
 
               <p>In Winter 2018, I will be graduating from the University of Michigan with a B.S. 
