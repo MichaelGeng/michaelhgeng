@@ -47,17 +47,17 @@ class About extends Component {
             <Col xs="12" sm="3" className="left">SKILLS</Col>
             <Col xs="12" sm="9">
               <Row>
-                <Col xs="12" sm="3"><div className="skill_section"><i className="fas fa-laptop-code skill_icon"></i>Programming</div>
-                  <p>JavaScript <br/>Python<br/>C++<br/>SQL/NoSQL<br/>HTML/CSS</p>
+                <Col xs="12" sm="3"><div className="skill_section"><i className="fas fa-laptop-code skill_icon"></i>Backend</div>
+                  <p>Java<br/>Node.js<br/>Python<br/></p>
                 </Col>
-                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-server"></i>Frameworks</div>
-                  <p>React<br/>Node<br/>jQuery<br/>Flask</p>
+                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-server"></i>Frontend</div>
+                  <p>React<br/>Angular<br/>jQuery<br/>HTML/CSS</p>
                 </Col>
                 <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-database"></i>Databases</div>
                   <p>SQLite<br/>MySQL<br/>MongoDB<br/>DynamoDB</p>
                 </Col>
-                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-cogs"></i>Libraries/Tools</div>
-                  <p>Git<br/>Redux<br/>Webpack<br/>Babel<br/>Rest APIs<br/>AWS</p>
+                <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-cogs"></i>Testing</div>
+                  <p>JUnit<br/>Mocha<br/>Cucumber<br/>Mockito</p>
                 </Col>
               </Row>
             </Col>
