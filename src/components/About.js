@@ -12,15 +12,14 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
-              <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am on a Backend Engineer on the Assist in Cloud team developing Java and Node.js microservices
+              <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am on a Backend Engineer on the Nike App @ Retail team developing Java and Node.js micro-services
                 deployed on AWS solutions.
               </p>
-              <p>In Spring 2019, I will begin my career as a Software Engineer I at Nike in Portland, Oregon. Team placement is TBD within Nike Digital.</p>
 
-              <p>In Winter 2018, I will be graduating from the University of Michigan with a B.S. 
+              <p>In Winter 2018, I graduated from the University of Michigan with a B.S.
                   in Computer Science. My coursework heavily revolved around Data Structures, Algorithms, Software Engineering, and Web Development.</p>
 
-              <p>In Summer 2018, I worked at <a href="https://jobs.nike.com/digital">Nike</a> as an Application Engineer Intern on the Rapid Application Development Team. I 
+              <p>In Summer 2018, I worked at <a href="https://jobs.nike.com/digital">Nike</a> as an Application Engineer Intern on the Rapid Application Development Team. I
                   implemented a Slack Bot in Python to aid with daily stand-ups and worked on user interface engineering with React.</p>
 
               <p>In Summer 2017, I worked at <a href="https://www.gmfinancial.com/">General Motors Financial</a> as an IT Special Projects Intern on the international IT Team. I
