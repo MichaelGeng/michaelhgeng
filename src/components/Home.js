@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
         <div id="home">
-            <img src = "/images/home_pic.jpg" id = "selfie" alt="me"/>
+            <img src = "/images/home_pic.JPG" id = "selfie" alt="me"/>
             <Quote />
 
             <Container id="react_strap">
