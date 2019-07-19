@@ -12,7 +12,7 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
-              <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am on a Backend Engineer on the Nike App @ Retail team developing Java and Node.js micro-services
+              <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am on a Backend Engineer on the Nike App @ Retail team developing Java and Node micro-services
                 deployed on AWS solutions.
               </p>
 
@@ -47,7 +47,7 @@ class About extends Component {
             <Col xs="12" sm="9">
               <Row>
                 <Col xs="12" sm="3"><div className="skill_section"><i className="fas fa-laptop-code skill_icon"></i>Backend</div>
-                  <p>Java<br/>Node.js<br/>Python<br/></p>
+                  <p>Java<br/>Node<br/>Python<br/></p>
                 </Col>
                 <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-server"></i>Frontend</div>
                   <p>React<br/>Angular<br/>jQuery<br/>HTML/CSS</p>
