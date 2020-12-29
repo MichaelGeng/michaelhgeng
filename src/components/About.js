@@ -12,6 +12,7 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
+              <p> In Summer 2020, I began my journey as a Software Engineer II at Microsoft in the Greater Seattle Area. I work Full-Stack for several web pages in Windows utilizing primarly C#, React, and Azure.</p>
               <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am a Backend Engineer on the Nike App @ Retail team developing Java and Node micro-services
                 deployed on AWS solutions. I develop new features with test driven development and contribute ideas towards our REST micro-services.
               </p>
