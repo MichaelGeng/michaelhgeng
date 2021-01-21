@@ -12,7 +12,7 @@ class About extends Component {
           <Row>
             <Col xs="12" sm="3" className="left">ABOUT ME</Col>
             <Col xs="12" sm="9">
-              <p> In Summer 2020, I began my journey as a Software Engineer II at Microsoft in the Greater Seattle Area. I work Full-Stack for several web pages in Windows utilizing primarly C#, React, and Azure.</p>
+              <p> In Summer 2020, I began my journey as a Software Engineer at <a href="https://microsoft.com/">Microsoft</a> in Redmond, Washington. I work Full-Stack for several web pages in Windows utilizing primarly C# and React.</p>
               <p> In Spring 2019, I began my career as a Software Engineer at Nike in Portland, Oregon. I am a Backend Engineer on the Nike App @ Retail team developing Java and Node micro-services
                 deployed on AWS solutions. I develop new features with test driven development and contribute ideas towards our REST micro-services.
               </p>
@@ -48,10 +48,10 @@ class About extends Component {
             <Col xs="12" sm="9">
               <Row>
                 <Col xs="12" sm="3"><div className="skill_section"><i className="fas fa-laptop-code skill_icon"></i>Backend</div>
-                  <p>Java<br/>Node<br/>Python<br/></p>
+                  <p>Java<br/>C#<br/>Node<br/></p>
                 </Col>
                 <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-server"></i>Frontend</div>
-                  <p>React<br/>Angular<br/>jQuery<br/>HTML/CSS</p>
+                  <p>React<br/>jQuery<br/>HTML/CSS</p>
                 </Col>
                 <Col xs="12" sm="3"><div className="skill_section"><i class="fas fa-database"></i>Databases</div>
                   <p>SQLite<br/>MySQL<br/>MongoDB<br/>DynamoDB</p>

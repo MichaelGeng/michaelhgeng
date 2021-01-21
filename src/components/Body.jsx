@@ -75,7 +75,7 @@ class Body extends Component {
                   <div id = "header">
                     <div id = "textEntry">
                       <p>Michael Geng</p>
-                      <p>University of Michigan Alum. Passionate about Engineering, Traveling, and Fitness.</p>
+                      <p>University of Michigan Alum. Interested in Engineering, Traveling, and Fitness.</p>
                       <Typed />
                     </div>
                     <Particles
